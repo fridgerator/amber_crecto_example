@@ -1,0 +1,38 @@
+name: amber_crecto
+version: 0.1.0
+
+authors:
+  - Amber <contact@ambercr.io>
+
+crystal: 0.23.1
+
+license: UNLICENSED
+
+targets:
+  amber_crecto:
+    main: src/amber_crecto.cr
+
+  amber:
+    main: lib/amber/src/amber/cli.cr
+
+dependencies:
+  amber:
+    github: amberframework/amber
+
+  quartz-mailer:
+    github: amberframework/quartz-mailer
+
+  jasper_helpers:
+    github: amberframework/jasper-helpers
+
+  pg:
+    github: will/crystal-pg
+  
+  crecto:
+    github: Crecto/crecto
+ 
+development_dependencies:
+  amber_spec:
+    github: amberframework/amber-spec
+
+

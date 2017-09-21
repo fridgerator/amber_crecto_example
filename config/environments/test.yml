@@ -1,0 +1,16 @@
+secret_key_base: _XzAl1XGtosUdiBOlsWVh10G1xCzbFCVBpllIgryeZs
+port: 3000
+log: "::Logger.new(STDOUT)"
+log_level: "::Logger::INFO"
+name: amber_crecto
+host: 0.0.0.0
+ssl_key_file:
+ssl_cert_file:
+redis_url: "redis://localhost:6379"
+session:
+  key: amber.session
+  store: :signed_cookie
+  expires: 0
+secrets:
+  description: Store your test secrets credentials and settings here.
+  database: postgres://postgres:@pg:5432/amber_crecto_test
